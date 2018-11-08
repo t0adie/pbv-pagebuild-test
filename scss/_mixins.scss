@@ -1,0 +1,42 @@
+@mixin text-align($pos) {
+    text-align: $pos;
+}
+
+@mixin margin-auto() {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin social() {
+    display: unset;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+@mixin row-padding($height, $width) {
+    padding: $height $width;
+}
+
+@mixin circle($size) {
+    width: $size;
+    height: $size;
+    border-radius: $size / 2;
+}
+
+@mixin hollow($colour, $width) {
+    color: $colour;
+    background: none;
+    border-color: $colour;
+    border-style: solid;
+    border-width: $width;
+}
+@mixin hollow-fill($colour) {
+    color: $white;
+    background: $colour;
+}
+
+@mixin underline($stroke, $colour, $style) {
+    box-shadow: none !important;
+    border: none;
+    border-bottom: $colour $stroke $style;
+}
